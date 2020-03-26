@@ -18,7 +18,7 @@ const formSearch = document.querySelector('.form-search'),
  * Данные
  */
 
-const citiesAPI = '../json/cities.json',
+const citiesAPI = './json/cities.json',
     proxy = 'https://cors-anywhere.herokuapp.com/',
     API_KEY = '8e75fdafe7057afa975f5c3b823f3124',
     calendarAPI = 'http://min-prices.aviasales.ru/calendar_preload',
