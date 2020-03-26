@@ -235,7 +235,7 @@ formSearch.addEventListener('submit', (event) => {
     if (formData.from && formData.to) {
         const requestData = `?depart_date=${formData.when}&origin=${formData.from.code}&destination=${formData.to.code}&one_way=true&token=${API_KEY}`;
 
-        getData(calendarAPI + requestData, (response) => {
+        getData(proxy + calendarAPI + requestData, (response) => {
             renderCheap(response, formData.when);
         }, (error) => {
             alert('По этому направлению нет рейсов!');
